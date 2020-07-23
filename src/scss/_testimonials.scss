@@ -1,0 +1,51 @@
+section.testimonials {
+  .slider-wrap {
+    max-width: 800px;
+    margin: auto;
+  
+    .slide {
+      width: 690px;
+      height: 310px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      
+      .content {
+        font-family: Inter;
+        color: $color-dark-blue;
+        max-width: 420px;
+        z-index: 1;
+
+        .desc {
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 29px;
+          letter-spacing: 0.5px;
+          margin: 0 0 30px;
+        }
+        
+        .author {
+          margin: 0;
+          font-weight: 700;
+          span {
+            color: $color-grayish-blue;
+            font-weight: 500;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .profile-pic {
+        max-width: 50%;
+        position: absolute;
+        right: 0;
+        z-index: 0;
+        img {
+          width: 310px;
+        }
+      }
+    }
+  }
+}
