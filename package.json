@@ -1,18 +1,21 @@
 {
   "name": "testimonials-slider",
   "version": "1.0.0",
-  "description": "solution to frontendmentor.io challenge",
+  "description": "",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mapra99/testimonials-slider.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
