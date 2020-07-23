@@ -9,14 +9,15 @@
 # npm setup
 echo "Initializing npm for package management..."
 npm init -y
-npm install -g npm-add-script --save-dev
 echo "node_modules/" >> .gitignore
 echo "npm initialized"
 
+echo "Installing dependencies"
+npm install -g npm-add-script --save-dev
+
 # Webpack setup
-echo "Adding webpack as dependency..."
 npm install webpack webpack-cli --save-dev
-echo "Webpack added"
+echo "Dependencies added"
 
 
 echo "Creating directory structure and base files..."
