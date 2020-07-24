@@ -1,11 +1,15 @@
 section.testimonials {
-  .slider-wrap {
+  .slide-wrap {
     box-sizing: border-box;
     max-width: 820px;
     padding: 65px 35px 85px;
     margin: auto;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
     position: relative;
+
+    @media (max-width: $breakpt-small) {
+      padding: 65px 25px 75px;
+    }
   
     .slide {
       max-width: 690px;
@@ -15,7 +19,12 @@ section.testimonials {
       flex-direction: row;
       align-items: center;
       position: relative;
-      
+
+      @media (max-width: $breakpt-small) {
+        flex-direction: column;
+        height: auto;
+      }
+
       .content {
         font-family: Inter;
         color: $color-dark-blue;
@@ -23,12 +32,24 @@ section.testimonials {
         max-width: 420px;
         z-index: 1;
         position: relative;
+        
+        @media (max-width: $breakpt-small) {
+          order: 1;
+          width: 100%;
+          max-width: none;
+          margin-top: 95px;
+          text-align: center;
+        }
 
         .quote-icon {
           position: absolute;
           top: -45px;
           left: 55px;
           width: 75px;
+
+          @media (max-width: $breakpt-small) {
+            left: calc(50% - 37.5px);
+          }
         }
 
         .desc {
@@ -42,10 +63,18 @@ section.testimonials {
         .author {
           margin: 0;
           font-weight: 700;
+          font-size: 15px;
+          line-height: 15px;
           span {
             color: $color-grayish-blue;
             font-weight: 500;
-            font-size: 14px;
+            content: "\A";
+            white-space: pre;
+
+            @media (max-width: $breakpt-small) {
+              display: block;
+              margin-top: 7.5px;
+            }
           }
         }
       }
@@ -56,6 +85,13 @@ section.testimonials {
         position: absolute;
         right: 0;
 
+        @media (max-width: $breakpt-small) {
+          position: relative;
+          order: 0;
+          width: calc(100% - 75px);
+          max-width: none;
+        }
+
         .profile-bg{
           position: absolute;
           top: -35px;
@@ -63,6 +99,11 @@ section.testimonials {
           z-index: -1;
           max-width: 380px;
           width: calc(100% + 70px);
+
+          @media (max-width: $breakpt-small) {
+            max-width: none;
+          }
+
           img {
             width: 100%;
           }
@@ -79,8 +120,8 @@ section.testimonials {
       position: absolute;
       bottom: 0;
       left: 0;
-
       height: 90px;
+
       img {
         height: 90px;
       }
