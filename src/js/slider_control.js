@@ -1,5 +1,6 @@
 const sliderControl = (() => {
   const slides = document.querySelectorAll('.slide-wrap');
+  const sliderButtons = document.querySelectorAll('button.slider-btn');
   let activeIndex = 0;
   let previousIndex = getPreviousIndex();
   let nextIndex = getNextIndex();
@@ -36,6 +37,13 @@ const sliderControl = (() => {
   window.addEventListener('keydown', (e) => {
     if (e.code === 'ArrowRight') moveToRight();
     if (e.code === 'ArrowLeft') moveToLeft();
+  });
+
+  sliderButtons.forEach(button => {
+    button.addEventListener('click', e => {
+      if (button.classList.contains("next")) moveToRight();
+      if (button.classList.contains("prev")) moveToLeft();
+    });
   });
 
   slides.forEach((slide) => {
