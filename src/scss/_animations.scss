@@ -1,0 +1,37 @@
+@keyframes appear-from-left {
+  0% {transform: translateX(-100vw);}
+  100% {transform: translateX(0);}
+}
+
+@keyframes appear-from-right {
+  0% {transform: translateX(100vw);}
+  100% {transform: translateX(0);}
+}
+
+@keyframes remove-to-right {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(100vw);}
+}
+
+@keyframes remove-to-left {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100vw);}
+}
+
+.appear-from-left {
+  transform: translateX(-100vw);
+  animation: appear-from-left 0.375s;
+}
+
+.appear-from-right {
+  transform: translateX(100vw);
+  animation: appear-from-right 0.375s;
+}
+
+.remove-to-right {
+  animation: remove-to-right 0.375s;
+}
+
+.remove-to-left {
+  animation: remove-to-left 0.375s;
+}

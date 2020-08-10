@@ -1,4 +1,6 @@
 section.testimonials {
+  overflow-x: hidden;
+
   .slide-wrap {
     box-sizing: border-box;
     max-width: 820px;
@@ -6,9 +8,14 @@ section.testimonials {
     margin: auto;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
     position: relative;
+    display: none;
 
     @media (max-width: $breakpt-small) {
       padding: 65px 25px 75px;
+    }
+
+    &.active {
+      display: block;
     }
   
     .slide {
