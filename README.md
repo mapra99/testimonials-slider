@@ -1,1 +1,2 @@
-# Testimonials Slider Component
+# Testimonials Slider
+
