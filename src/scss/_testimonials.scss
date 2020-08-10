@@ -124,7 +124,14 @@ section.testimonials {
         .slider-btns-wrap {
           display: inline-block;
           border-radius: 50%;
-          box-shadow: 0 5px 5px 2.5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2.5px 5px 2.5px rgba(0, 0, 0, 0.1);
+          position: relative;
+          left: 35px;
+          top: -20px;
+
+          @media (max-width: $breakpt-small) {
+            left: calc(50% - 30px);
+          }
 
           .slider-btn {
             width: 30px;
@@ -132,9 +139,6 @@ section.testimonials {
             border: none;
             background: $color-white;
             transition: background 0.2s;
-            position: relative;
-            left: 35px;
-            top: -20px;
 
             &.prev {
               border-top-left-radius: 50%;
