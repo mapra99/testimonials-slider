@@ -26,12 +26,11 @@ To get a local copy of a dev environment up and running, follow these simple ste
 ### Setup
 1. Clone the repository
 ```
-git clone git@github.com:mapra99/chat-app-lp.git
-```
+git clone git@github.com:mapra99/testimonials-slider.git
 
 2. `cd` to the project folder
 ```
-cd chat-app-lp
+cd testimonials-slider
 ```
 
 ### Install
