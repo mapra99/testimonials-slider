@@ -1,6 +1,6 @@
 # Tetimonials Slider
 
-> This slider show you the best testimonials of the best coding bootcamp :D
+> This slider shows you the best testimonials of the best coding bootcamp :D
 
 ![screenshot](./docs/views/desktop-view.png)
 
